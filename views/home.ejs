@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20714197.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </head>
 
     <title>Portfolio App</title>
@@ -18,7 +22,14 @@
             <h1 class="display-3">Avery's Nanostack App</h1>
             <p class="h3 text-muted mb-3">Coming soon</p>
             <div></span><img src="https://picsum.photos/600/350" class="img-fluid rounded" alt="Responsive image"></div>
-            <a href="whatsnew.ejs"><button" class="btn btn-dark mt-4">What's New</button></a>
+            <a href="whatsnew.ejs"><button" class="btn btn-dark my-4">What's New</button></a>
+            <form action="/" method="post">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email">
+              <label for="firstname">Name:</label>
+              <input type="text" id="firstname" name="firstname">
+              <input type="submit" value="Submit">
+            </form>
           </div>
       </div>
    </body>
