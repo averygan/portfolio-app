@@ -5,6 +5,10 @@ app.get("/", function(req, res){
     res.render('home');
   });
 
+  app.get("/whatsnew.ejs", function(req, res){
+    res.render('whatsnew');
+  });
+
 app.listen(3000, function()
   {console.log("Server started on port 3000");}
 );
