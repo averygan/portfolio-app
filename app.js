@@ -32,6 +32,11 @@ MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) =
 
   database = client.db(DATABASE_NAME);
   collection = database.collection("newcollection"); // you can change the collection name
+
+  // Start the application after the database connection is ready
+  app.listen(3000, function()
+  {console.log("Server started on port 3000");}
+  );
 });
 
 app.post("/", function(req, res){
@@ -92,8 +97,3 @@ app.post("/", function(req, res){
  res.redirect('/') // or do something else here
 
 });
-
-// Start the application after the database connection is ready
-app.listen(3000, function()
-  {console.log("Server started on port 3000");}
-);
